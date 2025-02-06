@@ -1,28 +1,28 @@
 {
   "compilerOptions": {
-    "target": "ES2022",                // Modern JavaScript output
-    "module": "CommonJS",              // Use CommonJS for compatibility with Node.js
-    "moduleResolution": "Node",        // Resolve modules in the same way Node.js does
-    "outDir": "./dist",                // Output compiled JS to the "dist" folder
-    "rootDir": "./src",                // All source files are in the "src" folder
-    "strict": true,                    // Enable strict type-checking options
-    "esModuleInterop": true,           // Allow default imports from non-ES modules
-    "skipLibCheck": true,              // Skip checking library files (improves build time)
-    "forceConsistentCasingInFileNames": true,  // Ensure file names are case-consistent
-    "resolveJsonModule": true,         // Allow importing JSON files
-    "baseUrl": ".",                    // Base directory for relative paths
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "baseUrl": ".",
     "paths": {
-      "*": ["node_modules/*"]          // Ensure imports from node_modules are resolved
+      "*": ["node_modules/*"]
     },
-    "typeRoots": ["./node_modules/@types", "./src/types"],  // Include custom types if any
-    "sourceMap": true,                 // Generate source maps for debugging
-    "declaration": true,               // Generate declaration files (.d.ts)
-    "experimentalDecorators": true,    // Enable decorators (if used)
-    "emitDecoratorMetadata": true,     // Enable metadata for decorators (if used)
-    "noImplicitAny": true,             // Avoid implicit 'any' types
-    "noUnusedLocals": true,            // Warn on unused local variables
-    "noUnusedParameters": true         // Warn on unused function parameters
+    "typeRoots": ["./node_modules/@types", "./src/types"],
+    "sourceMap": true,
+    "declaration": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
   },
-  "include": ["src/**/*"],             // Include all files under "src"
-  "exclude": ["node_modules", "dist"]  // Exclude "node_modules" and "dist" directories
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
 }
