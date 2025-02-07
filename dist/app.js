@@ -13,7 +13,7 @@ const __dirname = path.dirname(__filename);
 const envFile = process.env.NODE_ENV === 'production' ? '.env' : '.env.development';
 dotenv.config({ path: path.resolve(__dirname, '..', envFile) });
 const app = express();
-const port = process.env.PORT || 3001;
+const port = process.env.PORT || 3000;
 // Export the app instance for testing
 export default app;
 // Middleware
